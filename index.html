@@ -96,15 +96,35 @@
 
 
     /* Hero */
-    .hero {
-      min-height: 100vh;
-      background: radial-gradient(circle at top, #1f1f1f, #000);
-      display: flex;
-      align-items: center;
-    }
+.hero {
+  min-height: 100vh;
+  background-image: url('images/hero-bg.png'); /* Your new image */
+  background-size: cover;        /* Cover the entire hero section */
+  background-position: center;   /* Center the image */
+  background-repeat: no-repeat;  /* No tiling */
+  display: flex;
+  align-items: center;
+  position: relative;            /* For overlay if needed */
+  color: white;                  /* Make text readable */
+}
+
+/* Optional: add dark overlay to make text pop */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Adjust opacity */
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2; /* Keep text above overlay */
+}
+
 
     .hero h1 span {
-      color: #00ffd5;
+      color: #cdfa04;
     }
 
     /* Section spacing */
@@ -307,7 +327,7 @@ Level up your channel with Arts & Graphics, where <strong>creativity meets gamin
     
     <!-- Social Icons -->
     <div class="mb-3">
-      <a href="#" target="_blank" class="social-icon me-3">
+      <a href="https://x.com/graphics89853" target="_blank" class="social-icon me-3">
         <i class="bi bi-twitter-x"></i>
       </a>
 
@@ -414,6 +434,7 @@ document.addEventListener('keydown', e => {
 
 </body>
 </html>
+
 
 
 
