@@ -9,17 +9,6 @@
     <meta name="keywords" content="3D artist, Graphics, Graphic Design, 3D graphics, visual design, branding design, digital artist portfolio, creative designer">
     <meta name="keywords" content="3D artist portfolio, 3D graphics designer, visual designer, digital artist, branding design, creative 3D visuals, freelance 3D artist">
 
-    <!-- Favicon Start -->
-
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="icon" href="favicon.ico">
-
-
- <!-- Favicon End -->
-
 
 
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
@@ -32,7 +21,25 @@
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+  
+  <!-- Favicon Start -->
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="icon" href="favicon.ico">
+
+
+ <!-- Favicon End -->
+
+
+
   <style>
+
+
+
+
     body {
       font-family: 'Poppins', sans-serif;
       background-color: #0f0f0f;
@@ -45,9 +52,6 @@
   letter-spacing: -0.02em;
 }
 
-    h2 span {
-      color: #00ffd5;
-    }
 
 
 
@@ -95,8 +99,20 @@
 }
 
 
-       /* Hero */
- 
+    /* Hero */
+    /* .hero {
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #1f1f1f, #000);
+      display: flex;
+      align-items: center;
+    }*/
+
+    .hero h1 span {
+      color: #cdfa04;
+    } 
+
+
+    
     .hero {
   min-height: 100vh;
   background-image: url('images/hero.png'); /* Your new image */
@@ -122,9 +138,14 @@
   position: relative;
   z-index: 2; /* Keep text above overlay */
 }
-    
-    .hero h1 span {
-      color: #cdfa04;
+
+
+
+
+
+
+    h2 span {
+      color: #00ffd5;
     }
 
     /* Section spacing */
@@ -207,6 +228,11 @@ body {
   flex-direction: column;
 }
 
+  .logo {
+  height: 60px;
+  width: auto;
+}
+
 
   </style>
 
@@ -229,6 +255,9 @@ body {
 
 </head>
 <body>
+
+
+
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -270,9 +299,9 @@ body {
       <div class="col-md-8 glass p-5 text-center">
         <!-- <h2 class="fw-bold mb-3">About Me</h2> -->
          
-        <h2 class="fw-bold mb-3">About Us – <span>Arts & Graphics</span></h2>
+        <h2 class="fw-bold mb-3">About Us – <span> Arts & Graphics </span></h2>
 
-<p class="text-center mt-4">
+          <p class="text-center mt-4">
 Arts & Graphics is a <strong>creative studio specializing in 3D graphics and digital design</strong> tailored for <strong>Twitch streamers, content creators, and gaming communities</strong>. 
 We craft high-quality visuals, overlays, banners, emotes, and branding elements that make your stream stand out.
 </p>
@@ -434,10 +463,3 @@ document.addEventListener('keydown', e => {
 
 </body>
 </html>
-
-
-
-
-
-
-
