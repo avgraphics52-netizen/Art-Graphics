@@ -99,54 +99,66 @@
 }
 
 
-    /* Hero */
-    /* .hero {
-      min-height: 100vh;
-      background: radial-gradient(circle at top, #1f1f1f, #000);
-      display: flex;
-      align-items: center;
-    }*/
+  
+  /* HERO */
 
-    .hero h1 span {
-      color: #cdfa04;
-    } 
-
-
-    
     .hero {
   min-height: 100vh;
-  background-image: url('Images/hero.png'); /* Your new image */
-  background-size: cover;        /* Cover the entire hero section */
-  background-position: center;   /* Center the image */
-  background-repeat: no-repeat;  /* No tiling */
+  padding-top: 80px;
+  background-image: url('images/hero.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-color: #000;     /* fills empty space */
+
   display: flex;
   align-items: center;
-  position: relative;            /* For overlay if needed */
-  color: white;                  /* Make text readable */
+  justify-content: center;
+  text-align: center;
+
+  position: relative;
+  color: white;
 }
 
-/* Optional: add dark overlay to make text pop */
 .hero::before {
   content: "";
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.4); /* Adjust opacity */
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
 .hero .container {
   position: relative;
-  z-index: 2; /* Keep text above overlay */
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 80vh;
+    padding: 40px 15px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
 }
 
 
+  .hero h1 span {
+    color: #f6fa04;
+  } 
 
 
 
 
-    h2 span {
-      color: #00ffd5;
-    }
+   /* HERO */
+
 
     /* Section spacing */
     section {
@@ -463,5 +475,6 @@ document.addEventListener('keydown', e => {
 
 </body>
 </html>
+
 
 
